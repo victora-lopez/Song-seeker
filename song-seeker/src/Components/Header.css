@@ -1,0 +1,23 @@
+ul {
+    margin: 0;
+    padding: 0.25rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: .75rem;
+}
+
+li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none ;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.loginButton{
+    margin-left: auto;
+}
