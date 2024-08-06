@@ -7,7 +7,7 @@ ul {
 }
 
 li{
-    color: white;
+    color: black;
     text-decoration: none;
     list-style-type: none ;
 }
@@ -15,7 +15,7 @@ li{
 .header{
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: white;
 }
 
 .loginButton{

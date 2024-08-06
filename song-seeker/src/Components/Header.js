@@ -5,7 +5,7 @@ function Header(){
     return(
       <div className='header'>
         <ul>
-            <li className='logo'>imagine logo here<img src='' alt=''></img></li>
+            <li className='logo'><img src='' alt='Spotify Icon'></img></li>
             <li className='title'>SongSeeker</li>
             <li className='loginButton'><button>Login</button></li>
         </ul>
