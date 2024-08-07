@@ -3,21 +3,48 @@ ul {
     padding: 0.25rem;
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
     gap: .75rem;
 }
 
 li{
-    color: black;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
-    list-style-type: none ;
+    list-style-type: none;
 }
 
 .header{
     margin: 0;
     padding: 0;
     background-color: white;
+    display: flex;
+    flex-grow: 1;
+    height: 4rem;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.loginButton{
-    margin-left: auto;
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.header-left,
+.header-right{
+    display: flex;
+    flex: 1;
+}
+
+.header-left{
+    justify-content: flex-start;
+}
+
+.header-right{
+    justify-content: flex-end;
+}
+
+.login{
+    justify-content: flex-end;
 }
