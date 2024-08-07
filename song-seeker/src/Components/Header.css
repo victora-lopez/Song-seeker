@@ -14,10 +14,21 @@ li{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
 .header{
     margin: 0;
-    padding: 0;
-    background-color: white;
+    padding: 0 1rem;
+    background-color: black;
+    color: white;
     display: flex;
     flex-grow: 1;
     height: 4rem;
@@ -47,4 +58,17 @@ li{
 
 .login{
     justify-content: flex-end;
+    padding: .375rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgba(255, 209, 232, .925);
+}
+
+.login:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.title{
+    font-size: 1.375rem;
 }
