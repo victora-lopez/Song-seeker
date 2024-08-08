@@ -18,13 +18,25 @@ function Login() {
               .split("&")
               .find(elem => elem.startsWith("access_token"))
               .split("=")[1]
+            
+            window.location.hash = ""
+            window.localStorage.setItem("token", token)
         }
-    })
+
+        setToken(token)
+    }, [])
+
+    const logout = () => {
+        setToken("")
+        window.localStorage.removeItem("token")
+    }
 
     return(
-        <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>
-            <button className="login">Login</button>
-        </a>
+        !token ?
+            <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>
+                <button className="login">Login to Spotify</button>
+            </a>:
+            <button onClick={logout} className="login">Logout</button>
     )
 }
 
