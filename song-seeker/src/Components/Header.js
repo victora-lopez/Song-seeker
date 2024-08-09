@@ -6,7 +6,7 @@ function Header(){
     return(
     <div className='header'>
       <div className='header-left'>
-        <h2 className='title'>Song Seeker</h2>
+        <h2 className='title'><img src='logo-icon.png' alt='Music note inside magnifying glass'></img></h2>
       </div>
       <nav className='center'>
         <ul>
