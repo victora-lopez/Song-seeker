@@ -3,7 +3,7 @@ import './Header.css';
 import Login from './Login';
 import logo from './logo-icon.png';
 
-function Header(){
+function Header(props){
     return(
     <div className='header'>
       <div className='header-left'>
@@ -17,7 +17,7 @@ function Header(){
         </ul>
       </nav>
       <div className='header-right'>
-        <Login value="Login to Spotify"/>
+        <Login value="Login to Spotify" token={props.token} setToken={props.setToken}/>
       </div>
     </div>
     );

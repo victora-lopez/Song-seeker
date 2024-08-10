@@ -15,5 +15,11 @@
     grid-template-rows: repeat(2, minmax(100px, 1fr));
 }
 
+.content-right div{
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 30rem;
+}
+
 
 

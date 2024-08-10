@@ -7,8 +7,6 @@ const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
 const RESPONSE_TYPE = "token"
 
 function Login(props) {
-    const [token,setToken] = useState("");
-
     useEffect(() => {
         const hash = window.location.hash
         let token = window.localStorage.getItem("token")
@@ -23,16 +21,16 @@ function Login(props) {
             window.localStorage.setItem("token", token)
         }
 
-        setToken(token)
+        props.setToken(token)
     }, [])
 
     const logout = () => {
-        setToken("")
+        props.setToken("")
         window.localStorage.removeItem("token")
     }
 
     return(
-        !token ?
+        !props.token ?
             <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>
                 <button className="login">{props.value}</button>
             </a>:

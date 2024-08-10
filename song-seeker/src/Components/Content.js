@@ -2,7 +2,7 @@ import React from "react";
 import "./Content.css"
 import Login from "./Login";
 
-function Content() {
+function Content(props) {
     return(
         <div className="content">
             
@@ -17,7 +17,7 @@ function Content() {
                         API we deliver the best song recommendations based on your chosen track or your
                         music history. Dive into a world of melodies tailored just for you!
                     </p>
-                    <Login value="Get Started"/>
+                    <Login value="Get Started" token={props.token} setToken={props.setToken}/>
                 </div>
             </div>
         </div>
