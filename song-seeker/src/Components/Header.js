@@ -1,12 +1,13 @@
 import React from 'react';
 import './Header.css';
 import Login from './Login';
+import logo from './logo-icon.png';
 
 function Header(){
     return(
     <div className='header'>
       <div className='header-left'>
-        <h2 className='title'><img src='logo-icon.png' alt='Music note inside magnifying glass'></img></h2>
+        <h1 className='title'>Song Seeker</h1>
       </div>
       <nav className='center'>
         <ul>
@@ -16,7 +17,7 @@ function Header(){
         </ul>
       </nav>
       <div className='header-right'>
-        <Login/>
+        <Login value="Login to Spotify"/>
       </div>
     </div>
     );

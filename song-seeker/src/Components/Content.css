@@ -1,8 +1,8 @@
 .content{
+    color: white;
     display: grid;
     grid-template-columns: repeat(2, minmax(50px, 1fr));
-    grid-template-rows: repeat(3, auto);
-    color: white;
+
 }
 
 .content-left,
@@ -10,5 +10,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 4rem;
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(100px, 1fr));
 }
+
+
+
