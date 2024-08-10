@@ -12,7 +12,8 @@ function Content(props) {
             <div className="content-right">
                 <h2>Your Song,<br></br> Our Recommendations</h2> 
                 <div>
-                    <p>Welcome to Song Seeker, your music discovery companion. Start finding new music
+                    <p className="description">
+                        Welcome to Song Seeker, your music discovery companion. Start finding new music
                         by simply entering a song you love and letting us do the rest. Using Spotify's
                         API we deliver the best song recommendations based on your chosen track or your
                         music history. Dive into a world of melodies tailored just for you!
